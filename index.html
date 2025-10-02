@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Mapa da Feira Técnica - 2025</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="mapa-container">
+    <img id="mapa-imagem" src="/img/(Página Inicial) mapa-feira-tec_1.png" alt="Mapa da Feira" />
+
+        <!-- Hotspots (valores em %) -->
+        <div class="hotspot" 
+            style="top: 35%; left: 15%; width: 70%; height: 6%;" 
+            data-curso="administracao"
+            onclick="trocarMapa('administracao')"></div>
+
+        <div class="hotspot" 
+            style="top: 43%; left: 15%; width: 70%; height: 6%;" 
+            data-curso="analises-clinicas"
+            onclick="trocarMapa('analises-clinicas')"></div>
+
+        <div class="hotspot" 
+            style="top: 51%; left: 15%; width: 70%; height: 6%;" 
+            data-curso="eletronica"
+            onclick="trocarMapa('eletronica')"></div>
+
+        <div class="hotspot" 
+            style="top: 59%; left: 15%; width: 70%; height: 6%;" 
+            data-curso="informatica"
+            onclick="trocarMapa('informatica')"></div>
+
+        <div class="hotspot" 
+            style="top: 67%; left: 15%; width: 70%; height: 6%;" 
+            data-curso="quimica"
+            onclick="trocarMapa('quimica')"></div>
+
+        <div class="hotspot" 
+            style="top: 75%; left: 15%; width: 70%; height: 6%;" 
+            data-curso="publicidade"
+            onclick="trocarMapa('publicidade')"></div>
+    </div>
+    
+    <div class="indicadores-carrossel" id="indicadores-carrossel"></div>
+    
+    <div class="setas-navegacao" id="setas-navegacao">
+        <button class="seta seta-esquerda" onclick="imagemAnterior()">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button class="seta seta-direita" onclick="proximaImagem()">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    </div>
+    
+    <button class="botao-voltar" id="botao-voltar" onclick="voltarMapaInicial()">
+        <i class="bi bi-arrow-counterclockwise"></i>
+        Voltar ao Mapa Geral
+    </button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
