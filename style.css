@@ -71,7 +71,7 @@ body {
 
 .botao-voltar {
     position: fixed;
-    bottom: 30px;
+    bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
     background: #007bff;
