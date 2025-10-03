@@ -71,25 +71,26 @@ body {
 
 .botao-voltar {
     position: fixed;
-    bottom: 200px;
+    bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
     background: #007bff;
     color: white;
     border: none;
-    border-radius: 25px;
-    padding: 12px 20px;
-    font-size: 16px;
-    font-weight: bold;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
     cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0,123,255,0.4);
+    box-shadow: 0 3px 8px rgba(0,123,255,0.3);
     transition: all 0.3s ease;
     display: none;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 6px;
     z-index: 1000;
-    min-height: 50px;
+    width: 160px;
+    height: 40px;
     touch-action: manipulation;
     -webkit-tap-highlight-color: transparent;
     user-select: none;
@@ -99,42 +100,38 @@ body {
 .botao-voltar:active {
     background: #0056b3;
     transform: translateX(-50%) scale(0.95);
-    box-shadow: 0 2px 8px rgba(0,123,255,0.4);
+    box-shadow: 0 2px 6px rgba(0,123,255,0.4);
 }
 
 .botao-voltar.visible {
     display: flex;
 }
 
+/* Media queries para botão em telas pequenas */
 @media (max-width: 360px) {
     .botao-voltar {
         bottom: 25px;
-        padding: 10px 16px;
-        font-size: 14px;
-    }
-    
-    .botao-voltar .icone {
-        width: 18px;
-        height: 18px;
+        width: 140px;
+        height: 36px;
+        font-size: 13px;
+        padding: 6px 12px;
     }
 }
 
 @media (orientation: landscape) and (max-height: 500px) {
     .botao-voltar {
         bottom: 20px;
-        padding: 8px 12px;
-        font-size: 14px;
-    }
-    
-    .botao-voltar .icone {
-        width: 16px;
-        height: 16px;
+        width: 140px;
+        height: 34px;
+        font-size: 12px;
+        padding: 6px 10px;
     }
 }
 
+/* Indicadores do carrossel */
 .indicadores-carrossel {
     position: fixed;
-    bottom: 90px;
+    bottom: 80px;
     left: 50%;
     transform: translateX(-50%);
     display: none;
@@ -234,7 +231,7 @@ body {
 
 @media (max-width: 360px) {
     .indicadores-carrossel {
-        bottom: 80px;
+        bottom: 70px;
         gap: 10px;
     }
     
